@@ -116,6 +116,7 @@
 
 //import ".././global.css"
 import { Text, View, StatusBar } from 'react-native';
+import "..(tabs)";
 import { SafeAreaView } from 'react-native-safe-area-context';
 
  

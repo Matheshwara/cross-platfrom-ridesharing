@@ -114,19 +114,47 @@
 //   },
 // });
 
-//import ".././global.css"
-import { Text, View, StatusBar } from 'react-native';
-import "..(tabs)";
-import { SafeAreaView } from 'react-native-safe-area-context';
+// import { Text, View, StatusBar } from 'react-native';
+// import "../global.css";
+// import { SafeAreaView } from 'react-native-safe-area-context';
 
  
-export default function HomeScreen() {
+// export default function HomeScreen() {
+//   return (
+//     <SafeAreaView className="flex-1 items-center justify-center bg-white">
+//       <Text className={"text-xl font-bold text-blue-500"}>
+//         Welcome to Nativewind!
+//       </Text>
+//       {/* <StatusBar style="auto" /> */}
+//     </SafeAreaView>
+//   );
+// }
+
+// import { Text } from 'react-native'; // Removed SafeAreaView from here
+// import { SafeAreaView } from 'react-native-safe-area-context'; // Use this one instead
+// import "../global.css";
+
+// export default function HomeScreen() {
+//   return (
+//     <SafeAreaView className="flex-1 items-center justify-center bg-white">
+//       <Text className="text-xl font-bold text-blue-500">
+//         Welcome to Nativewind!
+//       </Text>
+//       {/* The ß is gone! */}
+//     </SafeAreaView>
+//   );
+// }
+
+import "../global.css"
+import { Text, View } from "react-native";
+import { SafeAreaFrameContext } from "react-native-safe-area-context";
+ 
+export default function App() {
   return (
-    <SafeAreaView className="flex-1 items-center justify-center bg-white">
-      <Text className="text-xl font-bold text-blue-500">
+    <SafeAreaFrameContext className={"flex-1 items-center justify-center bg-white"}>
+      <Text className={"text-xl font-bold text-blue-500"}>
         Welcome to Nativewind!
-      </Text>ß
-      {/* <statusBar style="auto" /> */}
-    </SafeAreaView>
+      </Text>
+    </SafeAreaFrameContext>
   );
 }

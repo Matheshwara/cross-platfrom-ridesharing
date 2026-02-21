@@ -1,5 +1,4 @@
 import "../global.css";
-import { StatusBar } from 'expo-status-bar';
 
 import { useFonts } from "expo-font";
 import { Stack } from 'expo-router';
